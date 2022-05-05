@@ -32,3 +32,5 @@ Dataset description: These are the name of Features from the dataset -:
 
 
 ###  Description of the communication protocols
+
+The group keep discussing the project detailes during live sessions and constantly making contact with each other through the slack app, including sharing of information and data that we find online.
