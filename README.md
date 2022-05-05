@@ -1,4 +1,4 @@
-# final_project
+# Wine Quality
 
 - Selected topic: Wine Quality
 - Reason why they selected their topic: We had a similar interest in wine.
