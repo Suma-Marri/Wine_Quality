@@ -36,4 +36,4 @@ We hope to find out what makes certain wines have a higher quality than others.
 
 ####  Description of the communication protocols
 
-The group keep discussing the project detailes during live sessions and constantly making contact with each other through the slack app, including sharing of information and data that we find online.
+The group keep discussing the project details during live sessions and constantly making contact with each other through the slack app, including sharing of information and data that we find online.
