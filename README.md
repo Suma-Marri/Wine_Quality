@@ -60,7 +60,9 @@ Wine Quality DataSet
 * Non-tabular:
 
 ### What type of data cleaning?
-* Remove any values that are unnecessary.
+* Remove any values that have null or undefined values. If there are any values missing in a particular column, we might drop it. If we see that a particular wine has a high/low quality with a missing value, such as pH. We can possibly predict the pH by comparing to other records with similar chemical make-up and do additional research in order to potentially add a new accurate value for the missing cell.
+* Remove any columns that don't affect the wine quality. For example, residual sugars and chlorides don't seem to effect the quality of wine, considering they have a low correlation between both variables, we would drop these two columns.
+* Sometimes, the wine names have special characters, which might not be able to pass through Jupyter Notebook, and when downloaded or uploaded as a CSV, so information might be lost. To avoid this, I plan to change some fo the special names so thatthey can pass through Jupyter Notebook without any errors. I will also add a unique ID number so that we can easily match the wines at the end.
 
 ### Feature Engineering Required?
  ### Additions to the DataSet
