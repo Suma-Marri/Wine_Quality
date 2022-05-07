@@ -60,7 +60,7 @@ Wine Quality DataSet
 * Non-tabular:
 
 ### What type of data cleaning?
-
+* Remove any values that are unnecessary.
 
 ### Feature Engineering Required?
  ### Additions to the DataSet
