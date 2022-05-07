@@ -42,7 +42,9 @@ Dataset description: These are the name of Features from the dataset
 
 #### Questions that we hope to answer with the data: 
 
-We hope to find out what makes certain wines have a higher quality than others. 
+- We hope to find out what makes certain wines have a higher quality than others. 
+- Which wines have better quality for less monetary value 
+- Which styles of wines have the highest ratings
 
 ####  Description of the communication protocols
 
