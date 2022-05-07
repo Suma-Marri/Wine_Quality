@@ -47,3 +47,17 @@ We hope to find out what makes certain wines have a higher quality than others.
 ####  Description of the communication protocols
 
 The group keep discussing the project details during live sessions and constantly making contact with each other through the slack app, including sharing of information and data that we find online.
+
+### Machine Learning FlowChart
+
+## DataSet
+
+## What type of input data?
+
+## What type of data cleaning?
+
+## Feature Engineering Required?
+
+## What is the Machine Learning Model?
+
+## How are you evaluating and testing the Machine Learning model?
