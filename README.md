@@ -51,13 +51,25 @@ The group keep discussing the project details during live sessions and constantl
 ## Machine Learning FlowChart
 
 ### DataSet
+Wine Quality DataSet
 
 ### What type of input data?
+* Label:
+* Classification:
+* Large number of variables:
+* Non-tabular:
 
 ### What type of data cleaning?
 
+
 ### Feature Engineering Required?
+ ### Additions to the DataSet
+* Wine types (White, Red) 
+* Styles (Sparkling, Light-bodied White, Full-Bodied White, Light-Bodied Red, Full-Bodied Red, Dessert, Rosé, etc.)
+* List Price
 
 ### What is the Machine Learning Model?
+* Supervised Machine Learning
 
 ### How are you evaluating and testing the Machine Learning model?
+* Linear Regression Model
