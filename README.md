@@ -15,10 +15,11 @@ Here we will predict the quality of wine on the basis of giving features. We are
 - Matplotlib
 - Tableau 
 - scikit-learn 
+- 
 
 #### Reason why we selected this topic: 
 
-We had a similar interest in wine and were curious on what affects wine quality. We also want to predit what kind of wines could possibly win certain wine competitions.  
+We had a similar interest in wine and were curious on which characteritics of wine affects its quality. We also want to predit what kind of wines could possibly win certain wine competitions.  
 
 #### Description of the source of data: 
 
