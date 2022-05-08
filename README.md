@@ -60,10 +60,10 @@ The group keep discussing the project details during live sessions and constantl
 Wine Quality DataSet
 
 ### What type of input data?
-* Label:
-* Classification:
-* Large number of variables:
-* Non-tabular:
+* Label: Type
+* Classification: fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulfates, alcohol
+* Large number of variables: N/A
+* Non-tabular: N/A
 
 ### What type of data cleaning?
 * Remove any values that have null or undefined values. If there are any values missing in a particular column, we might drop it. If we see that a particular wine has a high/low quality with a missing value, such as pH. We can possibly predict the pH by comparing to other records with similar chemical make-up and do additional research in order to potentially add a new accurate value for the missing cell.
