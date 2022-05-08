@@ -15,7 +15,7 @@ Here we will predict the quality of wine on the basis of giving features. We are
 - Matplotlib
 - Tableau 
 - scikit-learn 
-- 
+
 
 #### Reason why we selected this topic: 
 
