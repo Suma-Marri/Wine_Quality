@@ -81,3 +81,12 @@ Wine Quality DataSet
 
 ### How are you evaluating and testing the Machine Learning model?
 * Linear Regression Model
+
+### DataBase
+
+#### Database sample
+
+* By using the wine quality database provided on the top of the document and other wine rating apps information three new variables will be added to the list: Wine Type, style & price list. The final data base will be developed using PostgreSQL.
+
+The expected database should be similar to this example:
+![alt text](https://github.com/ramonmhung/Resources/blob/main/Screen%20Shot%202022-05-08%20at%2010.49.38%20AM.png)
