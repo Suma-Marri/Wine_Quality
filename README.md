@@ -25,6 +25,7 @@ We had a similar interest in wine and were curious on which characteritics of wi
 
 We found a dataset to start with that have multiple features for diffrent kinds of wines, such as pH and density. 
   - https://www.kaggle.com/rajyellow46/wine-quality
+  - https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/
 
 Dataset description: These are the name of Features from the dataset
 
