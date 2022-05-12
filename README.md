@@ -23,11 +23,13 @@ We had a similar interest in wine and were curious on which characteritics of wi
 
 #### Description of the source of data: 
 
+##### _RedWine_dataset.csv_ and _WhiteWine_dataset.csv_
+
 We found a dataset to start with that have multiple features for diffrent kinds of wines, such as pH and density. 
   - https://www.kaggle.com/rajyellow46/wine-quality
   - https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/
 
-Dataset description: These are the name of Features from the dataset
+Dataset description: These are the name of Features from the datasets.
 
 _Input Variables_
 
@@ -46,6 +48,28 @@ _Input Variables_
 _Output Variable_
 
 - Quality score : The quality rating of wine that is based on sensory data and scores from 0 to 10. 
+
+##### _PortugueseWineReviews.csv_
+Dataset decription: This csv file has all the reviews from BlogOsVinhos. The alcohol is measured by percentage. The prices are in euros (€). The rating is between 0-20. Sadly, so of the columns are in Portuguese, like the Judge's notes and the dates, but luckily we have Google Translate! There are some missing values, which were replaced with -1 (for numerical values) and null (for non-numerical values). Just incase the extraction did not pick up the values, there is a link column in case if you want to research and replace and null/-1 values. Also, there are wines available in Portugal, not made in Portugal, although some of them are made in Portugal. 
+
+_Input Variables_
+
+- Name: Name of the wine
+- Year: Year of the wine
+- Region: Region of where the wine was product was grown.
+- Color: Color of wine
+- Castes: Caste/Classification of the wine
+- AlcoholPercentage: The alcohol content measured by percentage
+- Producer: The producer of the wine.
+- MinimunPrice: Minimum price of bottle.
+- MaximumPrice: Maximum price of bottle
+- Judge: Judge's name
+- JudgeRating: Judge's rating between 0-20
+- Date: Judge put in review.
+- JudgeNotes: The commentary the judge put about the wine.
+- Label: Label of the wine bottle.
+- Link : Link to the review on BlogOsVinhos.
+ 
 
 #### Questions that we hope to answer with the data: 
 
