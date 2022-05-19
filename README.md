@@ -121,7 +121,8 @@ The expected database should be similar to this example:
 
 ### Storyboard
 
-https://docs.google.com/presentation/d/1QRK68lOQrO1qziipU8wEgTz0TUVyJu8ptpSPyhU3ots/edit#slide=id.p
+[Wine Quality Prediction Analysis.pdf](https://github.com/Suma-Marri/Wine_Quality/files/8732846/Wine.Quality.Prediction.Analysis.pdf)
+
 
 #### Tools used to create the final Dashboard:
 
