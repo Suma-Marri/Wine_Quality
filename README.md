@@ -108,7 +108,7 @@ Wine Quality DataSet
 ### How are you evaluating and testing the Machine Learning model?
 * Linear Regression Model
 
-### DataBase
+## DataBase
 
 #### Database sample
 
@@ -116,3 +116,18 @@ Wine Quality DataSet
 
 The expected database should be similar to this example:
 ![alt text](https://github.com/ramonmhung/Resources/blob/main/Screen%20Shot%202022-05-08%20at%2010.49.38%20AM.png)
+
+## Dashboard
+
+#### Tools used to create the final Dashboard:
+
+- JavaScript, HTML/CSS
+
+These are used to create an interactive webpage, where you put in the values for the various wine features and then on the click of a button (‘Predict’) the quality of the wine is displayed in the form of  a text message.
+
+- Tableau
+
+Tableau is used to create different visualizations showing correlations between wine features vs the quality of wine.
+On the webpage, there’s a tab ‘Dashboard’ which upon clicking navigate to another page where the Wine Dashboard is presented with two different tableau dashboards for Red Wine and White Wine.
+
+
