@@ -121,18 +121,32 @@ The expected database should be similar to this example:
 
 #### Tools used to create the final Dashboard:
 
-- JavaScript, HTML/CSS
+### JavaScript, HTML/CSS
 
 These are used to create an interactive webpage, where user put in the values for the various wine features and then on the click of a button (‘Predict’) the quality of the wine is displayed in the form of  a text message.
 
 <img width="590" alt="Screen Shot 2022-05-18 at 8 24 11 PM" src="https://user-images.githubusercontent.com/95826875/169367488-062e39e6-9224-418c-9204-39d847352322.png">
 
 
-- Tableau
+### Tableau
 
 Tableau is used to create different visualizations showing correlations between wine features vs the quality of wine.
 On the webpage, there’s a tab ‘Dashboard’ which upon clicking navigate to another page where the Wine Dashboard is presented with two different tableau dashboards for Red Wine and White Wine.
 
 <img width="399" alt="Screen Shot 2022-05-18 at 8 31 48 PM" src="https://user-images.githubusercontent.com/95826875/169367545-3d1d6f77-db52-402b-a153-c8d26e0e7898.png">
+
+#### Tableau Dashboards
+
+- Red Wine Quality Analysis
+
+https://public.tableau.com/app/profile/surbhi.bawaria/viz/RedWineQualityAnalysis_16527286095740/RedWineQualityAnalysis
+
+- White Wine Quality Analysis
+
+https://public.tableau.com/app/profile/surbhi.bawaria/viz/WhiteWineQualityAnalysis/WhiteWineQualityAnalysis
+
+
+
+
 
 
