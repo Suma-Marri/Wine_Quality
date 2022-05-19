@@ -121,14 +121,13 @@ The expected database should be similar to this example:
 
 ### Storyboard
 
-[Wine Quality Prediction Analysis.pdf](https://github.com/Suma-Marri/Wine_Quality/files/8732846/Wine.Quality.Prediction.Analysis.pdf)
-
+[Wine Quality Prediction Analysis.pdf](https://github.com/Suma-Marri/Wine_Quality/files/8732868/Wine.Quality.Prediction.Analysis.pdf)
 
 #### Tools used to create the final Dashboard:
 
 ### JavaScript, HTML/CSS
 
-These are used to create an interactive webpage, where user put in the values for the various wine features and then on the click of a button (‘Predict’) the quality of the wine is displayed in the form of  a text message.
+These are used to create an interactive webpage, where user put in the values for the various wine features and then on the click of the button (‘Predict’), the quality of the wine is displayed in the form of a text message.
 
 <img width="590" alt="Screen Shot 2022-05-18 at 8 24 11 PM" src="https://user-images.githubusercontent.com/95826875/169367488-062e39e6-9224-418c-9204-39d847352322.png">
 
