@@ -1,6 +1,6 @@
 # Wine Quality
 
-### DELIVERABLE 2
+### Machine Learning (DELIVERABLE 2)
 
 #### *Description of preliminary data preprocessing*
 * The preliminary data is the ‘Wine Quality’ dataset from kaggle, which was downloaded from UCI Machine Learning Repository. The dataset is related to red and white variants of the Portuguese "Vinho Verde" wine. The input variables of the data includes; fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, and alcohol. The output/ target variable is ‘quality’. Before the data was imported into Jupyter Notebook to begin the Machine Learning, we first divided the dataset into two CSV files; Red Wine and White Wine
