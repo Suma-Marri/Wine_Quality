@@ -1,9 +1,7 @@
 # Wine Quality
 
-- Selected topic: Wine Quality
-- Reason why they selected their topic: We had a similar interest in wine.
-- Description of their source of data: We found a dataset to start with that have multiple features for diffrent kinds of wines, such as pH and density. 
-  - https://www.kaggle.com/rajyellow46/wine-quality
-- Questions they hope to answer with the data: We hope to find out what makes certain wines have a higher quality than others. 
-
-###  Description of the communication protocols
+### DELIVERABLE 2
+1. The preliminary data, as previously mentioned is the ‘Wine Quality’ dataset from kaggle, which was downloaded from UCI Machine Learning Repository. The dataset provides. The two datasets are related to red and white variants of the Portuguese "Vinho Verde" wine. The input variables of the data includes; fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, and alcohol. The output/ target variable is ‘quality’.
+2. Before the data was imported into Jupyter Notebook to begin the Machine Learning, we first divided the dataset into two CSV files; Red Wine and White Wine. All the variables within the entire dataset are qualitative, so no columns or rows needed to be dropped. Further cleaning of the dataset found that there were 240 duplicates out of 1599 which needed to be dropped. After this, a heat map was created to visualize correlations between variables. There were strong correlations between alcohol and quality, density and fixed acidity, fixed acidity and citric acid, which gives a more focused group of input variables to pass through our machine learning model.
+3. <<<Split / Train>>>
+4. The model that was chosen for this model is the Linear Regression model. As supervised learning is well suited to input and output variables to predict the outcome - in our case the relationship between quality and numerous input variables - the regression model is expected to perform efficiently and give us an accurate and simple visualization of the data. <<<LINEAR REGRESSION LIMITATIONS>>>
