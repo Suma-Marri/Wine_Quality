@@ -53,6 +53,10 @@ _Output Variable_
 ##### _PortugueseWineReviews.csv_
 Dataset decription: This csv file has all the reviews from BlogOsVinhos. The alcohol is measured by percentage. The prices are in euros (€). The rating is between 0-20. Sadly, so of the columns are in Portuguese, like the Judge's notes and the dates, but luckily we have Google Translate! There are some missing values, which were replaced with -1 (for numerical values) and null (for non-numerical values). Just incase the extraction did not pick up the values, there is a link column in case if you want to research and replace and null/-1 values. Also, there are wines available in Portugal, not made in Portugal, although some of them are made in Portugal. 
 
+#### Wine Enthusiast reviews 
+
+Data set description: From a previous scrape multiple files containing 250k reviews from wine enthusiast magazine were joined together and filtered between Portuguese red wines and Portuguese white wines. All non relevant information was removed like wine subregions, winery and wine name. For our study price and rating are the most relevant. Using this information we hope to compare with the Machine learning model and check it's efficiency.
+
 _Input Variables_
 
 - Name: Name of the wine
