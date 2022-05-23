@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wine Quality Prediction</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href="static/css/style.css" rel="stylesheet">
+</head>
+
+<body style="background-color:bisque">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 jumbotron text-center" style="background-image: url(https://media.istockphoto.com/photos/bottles-and-wineglasses-with-grapes-at-sunset-picture-id1017647288?k=20&m=1017647288&s=612x612&w=0&h=zqaqJynd_6VTm37Cg3wINTv_JRi3dzZWrj_NuVWfRE4=); background-size: 100%; background-position: 0mm;">
+          <h1 style="color: black">Wine Quality Prediction</h1>
+          <p style = "font-family:georgia,garamond,serif;font-size:18px;font-style:italic;color:black">Use the features below to predict the quality of your wine.</p>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-tabs">
+                <a class="nav-link" href="dashboard.html" style="color: black">Dashboard</a>
+            </li>
+        </ul>
+    </div>
+
+    <h2 style="color: black">WINE FEATURES</h2>
+    
+    <div class="container">
+        <div class="row margin-top-50">
+            <div class="col-md-3">
+                <aside class="inputs">
+                    <div class="panel panel-default" style="background-color:antiquewhite">
+                        <div class="panel-body" style="background-color:antiquewhite">
+                            <form id="form" method="post" action="/predict">
+                                <div class="form-group" >
+                                    <ul class="list-group" id="inputs">
+                                        <li class="filter list-group-item">
+                                            <label data-toggle="popover" data-trigger="hover"
+                                                data-content="The predominant fixed acids in wine, such as tartaric, succinic, citric, and malic acids.">Fixed
+                                                Acidity (g/L)</a></label>
+                                            <input class="form-control" name="input6" type="number" step=".1">
+                                        </li>
+
+                                        <li class="filter list-group-item">
+                                            <label data-toggle="popover" data-trigger="hover"
+                                                data-content="The high acetic acid present in wine, which causes an unpleasant vinegar taste.">Volatile
+                                                Acidity (g/L)</label>
+                                            <input class="form-control" name="input1" type="number" step=".01">
+                                        </li>
+
+                                        <li class="filter list-group-item">
+                                            <label data-toggle="popover" data-trigger="hover"
+                                                data-content="A weak organic acid used to increase the freshness and flavor of wine.">Citric
+                                                Acid (g/L)</label>
+                                            <input class="form-control" name="input3" type="number" step=".01">
+                                        </li>
+
+                                        <li class="filter list-group-item">
+                                            <label data-toggle="popover" data-trigger="hover"
+                                                data-content="The amount of sugar left after fermentation.">Residual
+                                                Sugar (g/L)</label>
+                                            <input class="form-control" name="input5" type="number" step=".1">
+                                        </li>
+
+                                        <li class="filter list-group-item">
+                                            <label data-toggle="popover" data-trigger="hover"
+                                                data-content="The amount of salt in wine. The lower chloride rate creates better quality wines.">Chlorides
+                                                (g/L)</label>
+                                            <input class="form-control" name="input7" type="number" step=".001">
+                                        </li>
+
+                                        <li class="filter list-group-item">
+                                            <label data-toggle="popover" data-trigger="hover"
+                                                data-content="SO2 is used for preventing wine from oxidation and microbial spoilage.">Free
+                                                Sulfur Dioxide (g/L)</label>
+                                            <input class="form-control" name="input8" type="number" step="1">
+                                        </li>
+
+                                        <li class="filter list-group-item">
+                                            <label data-toggle="popover" data-trigger="hover"
+                                                data-content="The amount of free and bound forms of SO2.">Total
+                                                Sulfur Dioxide (g/L)</label>
+                                            <input class="form-control" name="input9" type="number" step="1">
+                                        </li>
+
+                                        <li class="filter list-group-item">
+                                            <label data-toggle="popover" data-trigger="hover"
+                                                data-content="Depends on the alcohol and sugar content. Better wines usually have lower densities.">Density
+                                                (g/mL)</label>
+                                            <input class="form-control" name="input11" type="number" step=".0001">
+                                        </li>
+
+                                        <li class="filter list-group-item">
+                                            <label data-toggle="popover" data-trigger="hover"
+                                                data-content="Used to check the level of acidity or alkalinity of wine.">pH</label>
+                                            <input class="form-control" name="input10" type="number" step=".01">
+                                        </li>
+
+                                        <li class="filter list-group-item">
+                                            <label data-toggle="popover" data-trigger="hover"
+                                                data-content="An antibacterial and antioxidant agent added to wine.">Sulphates
+                                                (g/L)</label>
+                                            <input class="form-control" name="input2" type="number" step=".01">
+                                        </li>
+
+                                        <li class="filter list-group-item">
+                                            <label data-toggle="popover" data-trigger="hover" data-content="The percentage of alcohol in wine. A higher concentration leads to better quality.">Alcohol (% by volume)</label>
+                                            <input class="form-control" name="input4" type="number" step=".1">
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <button id="button" type="submit" value="submit" class="btn btn-default" data-toggle="modal"
+                                            data-target="#mymodal">Predict</button>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="container">
+                        <p1 style = "font-family:georgia,garamond,serif;font-size:16px;font-style:italic;color:black">
+                        <br>
+                        <br>
+                        Fixed acidity : The predominant fixed acids in wine, such as tartaric, succinic, citric, and malic acids.
+                        <br>
+                        <br>
+                        <br>
+                        Volatile acidity : The high acetic acid present in wine, which causes an unpleasant vinegar taste.
+                        <br>
+                        <br>
+                        <br>
+                        Citric acid : A weak organic acid used to increase the freshness and flavor of wine.
+                        <br>
+                        <br>
+                        <br>
+                        Residual sugar : The amount of sugar left after fermentation.
+                        <br>
+                        <br>
+                        <br>
+                        Chlorides : The amount of salt in wine. The lower chloride rate creates better quality wines.
+                        <br>
+                        <br>
+                        <br>
+                        Free sulfur dioxide : SO2 is used for preventing wine from oxidation and microbial spoilage.
+                        <br>
+                        <br>
+                        <br>
+                        Total sulfur dioxide : The amount of free and bound forms of SO2.
+                        <br>
+                        <br>
+                        <br>
+                        Density : Depends on the alcohol and sugar content. Better wines usually have lower densities.
+                        <br>
+                        <br>
+                        <br>
+                        pH : Used to check the level of acidity or alkalinity of wine.
+                        <br>
+                        <br>
+                        <br>
+                        Sulphates : An antibacterial and antioxidant agent added to wine.
+                        <br>
+                        <br>
+                        <br>
+                        Alcohol : The percentage of alcohol in wine. A higher concentration leads to better quality.</p1>
+                  </div>
+                </div>
+            </div>
+        <footer class="footer">
+            <span class="bottom"></span>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="./static/js/app.js"></script>
+    <script scr="./app.py"></script>
+</body>
+
+</html>
