@@ -10,6 +10,9 @@ import pickle
 #Initialize Flask and set the template folder to "template"
 app = Flask(__name__, template_folder = 'template')
 
+# Open our model 
+model = pickle.load(open('model.pkl','rb'))
+
 #create our "home" route using the "index.html" page
 @app.route('/')
 def home():
