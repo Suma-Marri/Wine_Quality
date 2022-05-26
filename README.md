@@ -140,8 +140,6 @@ The expected database should be similar to this example:
 
 ## Dashboard
 
-### Storyboard
-
 #### Tools used to create the final Dashboard:
 
 ### JavaScript, HTML/CSS
