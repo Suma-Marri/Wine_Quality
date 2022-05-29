@@ -139,6 +139,8 @@ The expected database should be similar to this example:
 
 ## Dashboard
 
+Link (local): http://127.0.0.1:5000
+
 #### Tools used to create the final Dashboard:
 
 ### JavaScript, HTML/CSS
