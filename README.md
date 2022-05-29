@@ -123,7 +123,6 @@ Wine Quality DataSet
 The expected database should be similar to this example:
 ![alt text](https://github.com/ramonmhung/Resources/blob/main/Screen%20Shot%202022-05-08%20at%2010.49.38%20AM.png)
 
-
 ## Machine Learning
 
 #### *Description of preliminary data preprocessing*
@@ -147,6 +146,8 @@ The expected database should be similar to this example:
 These are used to create an interactive webpage, where user put in the values for the various wine features and then on the click of the button (‘Predict’), the quality of the wine is displayed in the form of a text message.
 
 <img width="590" alt="Screen Shot 2022-05-18 at 8 24 11 PM" src="https://user-images.githubusercontent.com/95826875/169367488-062e39e6-9224-418c-9204-39d847352322.png">
+<img width="590" alt="Screen Shot 2022-05-29 at 10 26 29 AM" src="https://user-images.githubusercontent.com/95826875/170874688-cd605c55-c024-4640-8159-7edf4b876f13.png">
+<img width="622" alt="Screen Shot 2022-05-29 at 10 36 12 AM" src="https://user-images.githubusercontent.com/95826875/170874906-7428f72b-22dc-439d-9397-7c354020df44.png">
 
 
 ### Tableau
