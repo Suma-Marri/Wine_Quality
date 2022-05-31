@@ -1,5 +1,7 @@
 # Import main library
 import numpy as np
+from sklearn.preprocessing import MinMaxScaler
+import joblib
 
 # Import Flask modules
 from flask import Flask, request, render_template
@@ -47,7 +49,11 @@ def predict():
         features = [[input1, input2, input3, input4, input5, input6, input7, input8, input9, input10, input11]]
         print(features)
         
-        prediction = model.predict(features)
+        # Load into app.py
+        scaler = joblib.load(scaler.save) 
+        scaled_features = scaler.fit_transform(features)
+        
+        prediction = model.predict(scaled_features)
         f"Prediction is {prediction}"
     
         if prediction[0]=="5":
