@@ -1,5 +1,7 @@
 # Wine Quality
 
+Storyboard: https://docs.google.com/presentation/d/1xI2P8KyCw7fxwQUVKRoSWpTGTt67C00HO_zXt9kASmo/edit#slide=id.g12ec38b41d9_0_64
+
 ## Project Overview
 
 #### Selected topic: Wine Quality Prediction
@@ -53,7 +55,7 @@ _Output Variable_
 ##### _PortugueseWineReviews.csv_
 Dataset decription: This csv file has all the reviews from BlogOsVinhos. The alcohol is measured by percentage. The prices are in euros (€). The rating is between 0-20. Sadly, so of the columns are in Portuguese, like the Judge's notes and the dates, but luckily we have Google Translate! There are some missing values, which were replaced with -1 (for numerical values) and null (for non-numerical values). Just incase the extraction did not pick up the values, there is a link column in case if you want to research and replace and null/-1 values. Also, there are wines available in Portugal, not made in Portugal, although some of them are made in Portugal. 
 
-#### Wine Enthusiast reviews 
+#### _Wine Enthusiast reviews_ 
 
 Data set description: From a previous scrape multiple files containing 250k reviews from wine enthusiast magazine were joined together and filtered between Portuguese red wines and Portuguese white wines. All non relevant information was removed like wine subregions, winery and wine name. For our study price and rating are the most relevant. Using this information we hope to compare with the Machine learning model and check it's efficiency.
 
@@ -123,7 +125,6 @@ Wine Quality DataSet
 The expected database should be similar to this example:
 ![alt text](https://github.com/ramonmhung/Resources/blob/main/Screen%20Shot%202022-05-08%20at%2010.49.38%20AM.png)
 
-
 ## Machine Learning
 
 #### *Description of preliminary data preprocessing*
@@ -140,6 +141,8 @@ The expected database should be similar to this example:
 
 ## Dashboard
 
+Link (local): http://127.0.0.1:5000
+
 #### Tools used to create the final Dashboard:
 
 ### JavaScript, HTML/CSS
@@ -147,6 +150,8 @@ The expected database should be similar to this example:
 These are used to create an interactive webpage, where user put in the values for the various wine features and then on the click of the button (‘Predict’), the quality of the wine is displayed in the form of a text message.
 
 <img width="590" alt="Screen Shot 2022-05-18 at 8 24 11 PM" src="https://user-images.githubusercontent.com/95826875/169367488-062e39e6-9224-418c-9204-39d847352322.png">
+<img width="590" alt="Screen Shot 2022-05-29 at 10 26 29 AM" src="https://user-images.githubusercontent.com/95826875/170874688-cd605c55-c024-4640-8159-7edf4b876f13.png">
+<img width="622" alt="Screen Shot 2022-05-29 at 10 36 12 AM" src="https://user-images.githubusercontent.com/95826875/170874906-7428f72b-22dc-439d-9397-7c354020df44.png">
 
 
 ### Tableau

@@ -31,7 +31,11 @@ def index():
 def predict():
     
     if request.method == 'POST':
-       try:  
+       try:
+           
+        #int_features = [float(x) for x in request.form.values()]
+        #final_features = [np.array(int_features)]
+        
         input1 = float(request.form["input1"])
         input2 = float(request.form["input2"])
         input3 = float(request.form["input3"])
@@ -43,12 +47,12 @@ def predict():
         input9 = float(request.form["input9"])
         input10 = float(request.form["input10"])
         input11 = float(request.form["input11"])
-        
+
         features = [[input1, input2, input3, input4, input5, input6, input7, input8, input9, input10, input11]]
         print(features)
         
         prediction = model.predict(features)
-        f"Prediction is {prediction}"
+        print(f"Prediction is {prediction}")
     
         if prediction[0]=="1":
             print("wine low quality")
