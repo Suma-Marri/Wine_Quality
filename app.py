@@ -11,7 +11,7 @@ import pickle
 app = Flask(__name__, template_folder = 'templates')
 
 # Open our model 
-model = pickle.load(open('redwine_model.pkl','rb'))
+model = pickle.load(open('model.pkl','rb'))
 
 # Create our "home" route using the "index.html" page
 @app.route('/')
@@ -50,12 +50,12 @@ def predict():
         prediction = model.predict(features)
         f"Prediction is {prediction}"
     
-        if prediction[0]=="5":
+        if prediction[0]=="1":
             print("wine low quality")
             return render_template('index.html',
                                prediction_text='Wine is of LOW Quality!'
                                )
-        elif prediction[0]=="6":
+        elif prediction[0]=="2":
             return render_template('index.html',
                                prediction_text='Wine is of MEDIUM quality!'
                                )                          
