@@ -159,7 +159,7 @@ These are used to create an interactive webpage, where user put in the values fo
 Tableau is used to create different visualizations showing correlations between wine features vs the quality of wine.
 On the webpage, there’s a tab ‘Dashboard’ which upon clicking navigate to another page where the Wine Dashboard is presented with two different tableau dashboards for Red Wine and White Wine Quality Analysis.
 
-<img width="365" alt="Screen Shot 2022-06-01 at 8 59 56 AM" src="https://user-images.githubusercontent.com/95826875/171410460-21c69713-5c34-4a77-88a1-7e3baed76434.png">
+<img width="362" alt="Screen Shot 2022-06-01 at 11 21 53 AM" src="https://user-images.githubusercontent.com/95826875/171440657-83333a18-5dd0-4714-b4eb-a305d24e30a7.png">
 
 
 #### Tableau Dashboards
