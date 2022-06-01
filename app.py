@@ -55,7 +55,6 @@ def predict():
         print(f"Prediction is {prediction}")
     
         if prediction[0]=="1":
-            print("wine low quality")
             return render_template('index.html',
                                prediction_text='Wine is of LOW Quality!'
                                )
