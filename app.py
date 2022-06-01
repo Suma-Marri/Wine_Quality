@@ -11,7 +11,7 @@ import pickle
 app = Flask(__name__, template_folder = 'templates')
 
 # Open our model 
-model = pickle.load(open('redwine_model.pkl','rb'))
+model = pickle.load(open('model.pkl','rb'))
 
 # Create our "home" route using the "index.html" page
 @app.route('/')
@@ -32,31 +32,20 @@ def predict():
     
     if request.method == 'POST':
        try:  
-        input1 = float(request.form["input1"])
-        input2 = float(request.form["input2"])
-        input3 = float(request.form["input3"])
-        input4 = float(request.form["input4"])
-        input5 = float(request.form["input5"])
-        input6 = float(request.form["input6"])
-        input7 = float(request.form["input7"])
-        input8 = float(request.form["input8"])
-        input9 = float(request.form["input9"])
-        input10 = float(request.form["input10"])
-        input11 = float(request.form["input11"])
         
-        features = [[input1, input2, input3, input4, input5, input6, input7, input8, input9, input10, input11]]
-        print(features)
         
-        model = pickle.load(open('redwine_model.pkl','rb'))
-        prediction = model.predict(features)
-        f"Prediction is {prediction}"
+        int_features = [float(x) for x in request.form.values()]
+        final_features = [np.array(int_features)]
+        
+        prediction = model.predict(final_features)
+        print(f"Prediction is {prediction}")
     
-        if prediction[0]=="5":
+        if prediction[0]=="1":
             print("wine low quality")
             return render_template('index.html',
                                prediction_text='Wine is of LOW Quality!'
                                )
-        elif prediction[0]=="6":
+        elif prediction[0]=="2":
             return render_template('index.html',
                                prediction_text='Wine is of MEDIUM quality!'
                                )                          
